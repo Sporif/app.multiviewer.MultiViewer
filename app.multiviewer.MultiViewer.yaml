@@ -1,0 +1,61 @@
+id: app.multiviewer.MultiViewer
+base: org.electronjs.Electron2.BaseApp
+base-version: '24.08'
+runtime: org.freedesktop.Platform
+runtime-version: '24.08'
+sdk: org.freedesktop.Sdk
+command: multiviewer
+separate-locales: false
+tags:
+  - proprietary
+
+finish-args:
+  - --share=ipc
+  - --share=network
+  - --socket=x11
+  - --socket=wayland
+  - --socket=pulseaudio
+  - --device=dri
+
+  - --talk-name=org.freedesktop.ScreenSaver
+  - --talk-name=org.freedesktop.secrets
+  - --talk-name=org.kde.kwalletd5
+  - --talk-name=org.kde.kwalletd6
+
+  # Add option to enable Wayland backend
+  - --env=MULTIVIEWER_USE_WAYLAND=0
+
+modules:
+  - libsecret.json
+  - name: multiviewer
+    buildsystem: simple
+    build-commands:
+      - |
+        set -e
+        cp -a . /app/multiviewer
+        chmod 755 "/app/multiviewer/MultiViewer for F1"
+    sources:
+      - type: archive
+        url: https://releases.multiviewer.app/download/192684464/MultiViewer.for.F1-linux-x64-1.36.1.zip
+        sha256: 7d2fec7456cbb35e1adcf41045bd278c0bc0d383adc55bdf0822ddd727034427
+  - name: multiviewer-extras
+    buildsystem: simple
+    build-commands:
+      - |
+        set -e
+        install -Dm644 -t /app/share/icons/hicolor/512x512/apps $FLATPAK_ID.png
+        install -Dm644 -t /app/share/applications $FLATPAK_ID.desktop
+        install -Dm644 -t /app/share/metainfo $FLATPAK_ID.metainfo.xml
+        install -Dm755 multiviewer-wrapper.sh /app/bin/multiviewer
+        install -Dm755 clean-gpucache.sh /app/bin/clean-gpucache
+    sources:
+      - type: file
+        path: app.multiviewer.MultiViewer.metainfo.xml
+      - type: file
+        path: app.multiviewer.MultiViewer.desktop
+      - type: file
+        path: app.multiviewer.MultiViewer.png
+      - type: file
+        path: multiviewer-wrapper.sh
+      - type: file
+        path: clean-gpucache.sh

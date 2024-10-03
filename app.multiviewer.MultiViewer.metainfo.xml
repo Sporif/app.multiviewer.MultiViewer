@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>app.multiviewer.MultiViewer</id>
+  <launchable type="desktop-id">app.multiviewer.MultiViewer.desktop</launchable>
+  <name>MultiViewer</name>
+  <summary>Motorsport Desktop Client</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>LicenseRef-proprietary</project_license>
+  <developer_name>MultiViewer</developer_name>
+  <url type="homepage">https://multiviewer.app</url>
+  <description>
+    <p>
+      MultiViewer is an unofficial, community-built, multi-stream player for various motorsports, with capabilities to sync multiple streams, restore saved layouts, and show live telemetry alongside live action.
+    </p>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://multiviewer.app/_next/static/media/feature-multistream.9168362f.jpg</image>
+      <caption>Watch multiple streams at once</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://multiviewer.app/_next/static/media/feature-live-timing.45bc2bae.png</image>
+      <caption>Live timing and telemetry</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://multiviewer.app/_next/static/media/feature-trackmap.ae2c6850.png</image>
+      <caption>Track map with marshal sectors</caption>
+    </screenshot>
+  </screenshots>
+  <releases>
+    <release version="1.36.1"  date="2024-09-15"/>
+    <release version="1.36.0"  date="2024-09-13"/>
+    <release version="1.35.6"  date="2024-08-31"/>
+    <release version="1.35.5"  date="2024-08-25"/>
+    <release version="1.35.4"  date="2024-07-28"/>
+    <release version="1.35.3"  date="2024-07-27"/>
+    <release version="1.35.2"  date="2024-07-19"/>
+    <release version="1.35.1"  date="2024-07-07"/>
+    <release version="1.34.4"  date="2024-07-06"/>
+    <release version="1.34.3"  date="2024-06-30"/>
+    <release version="1.34.2"  date="2024-06-29"/>
+    <release version="1.34.1"  date="2024-06-29"/>
+    <release version="1.34.0"  date="2024-06-23"/>
+    <release version="1.33.1"  date="2024-06-15"/>
+    <release version="1.33.0"  date="2024-06-15"/>
+    <release version="1.32.1"  date="2024-05-18"/>
+    <release version="1.32.0"  date="2024-05-18"/>
+    <release version="1.31.10" date="2024-05-11"/>
+    <release version="1.31.9"  date="2024-05-01"/>
+    <release version="1.31.7"  date="2024-03-09"/>
+    <release version="1.31.6"  date="2024-03-08"/>
+    <release version="1.31.5"  date="2024-03-07"/>
+    <release version="1.31.4"  date="2024-03-01"/>
+    <release version="1.31.3"  date="2024-03-01"/>
+    <release version="1.31.2"  date="2024-03-01"/>
+    <release version="1.31.1"  date="2024-02-29"/>
+    <release version="1.31.0"  date="2024-02-20"/>
+    <release version="1.29.0"  date="2023-11-26"/>
+    <release version="1.28.3"  date="2023-11-04"/>
+    <release version="1.28.2"  date="2023-10-29"/>
+    <release version="1.28.1"  date="2023-10-29"/>
+    <release version="1.28.0"  date="2023-10-29"/>
+    <release version="1.27.1"  date="2023-10-28"/>
+    <release version="1.27.0"  date="2023-10-20"/>
+    <release version="1.26.11" date="2023-10-07"/>
+  </releases>
+  <content_rating type="oars-1.1"/>
+  <update_contact>flatpak_at_sporif.com</update_contact>
+</component>

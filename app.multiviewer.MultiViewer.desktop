@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=MultiViewer
+Comment=Unofficial multi-stream player for various motorsports
+Categories=AudioVideo;Video;TV;
+Icon=app.multiviewer.MultiViewer
+Exec=multiviewer
+MimeType=x-scheme-handler/multiviewer
+Terminal=false
+X-Flatpak-Tags=proprietary;
+X-Flatpak=app.multiviewer.MultiViewer
