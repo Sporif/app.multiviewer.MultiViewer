@@ -28,6 +28,13 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="1.42.1"  date="2025-03-15"/>
+    <release version="1.42.0"  date="2025-03-15"/>
+    <release version="1.41.0"  date="2025-03-15"/>
+    <release version="1.40.0"  date="2025-03-14"/>
+    <release version="1.39.0"  date="2025-03-14"/>
+    <release version="1.38.1"  date="2025-02-26"/>
+    <release version="1.38.0"  date="2025-02-25"/>
     <release version="1.37.0"  date="2025-01-29"/>
     <release version="1.36.2"  date="2024-11-02"/>
     <release version="1.36.1"  date="2024-09-15"/>

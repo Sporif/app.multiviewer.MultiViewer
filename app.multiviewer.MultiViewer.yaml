@@ -36,8 +36,8 @@ modules:
         chmod 755 "/app/multiviewer/MultiViewer for F1"
     sources:
       - type: archive
-        url: https://releases.multiviewer.app/download/224651483/MultiViewer.for.F1-linux-x64-1.37.0.zip
-        sha256: da445edbdf4b6ea92902ef292947db5ca110a772dd96e15bde53bc8b958d8802
+        url: https://releases.multiviewer.app/download/237882046/MultiViewer.for.F1-linux-x64-1.42.1.zip
+        sha256: 9f59daa4436b2a01f919cc466fdad6a3b1dd2bb6fc34e017284d01a261f4b8c6
   - name: multiviewer-extras
     buildsystem: simple
     build-commands:
