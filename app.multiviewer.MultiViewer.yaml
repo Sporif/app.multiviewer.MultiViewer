@@ -10,20 +10,14 @@ tags:
   - proprietary
 
 finish-args:
-  - --share=ipc
   - --share=network
-  - --socket=x11
   - --socket=wayland
   - --socket=pulseaudio
   - --device=dri
 
   - --talk-name=org.freedesktop.ScreenSaver
   - --talk-name=org.freedesktop.secrets
-  - --talk-name=org.kde.kwalletd5
   - --talk-name=org.kde.kwalletd6
-
-  # Add option to enable Wayland backend
-  - --env=MULTIVIEWER_USE_WAYLAND=0
 
 modules:
   - libsecret.json
@@ -36,8 +30,8 @@ modules:
         chmod 755 "/app/multiviewer/MultiViewer for F1"
     sources:
       - type: archive
-        url: https://releases.multiviewer.app/download/237882046/MultiViewer.for.F1-linux-x64-1.42.1.zip
-        sha256: 9f59daa4436b2a01f919cc466fdad6a3b1dd2bb6fc34e017284d01a261f4b8c6
+        url: https://releases.multiviewer.app/download/243289395/MultiViewer.for.F1-linux-x64-1.43.2.zip
+        sha256: 0e0fde1b7b494d31f4d6cc5a3a3b5ad9b8fa8f00ee3cf09d3b64408687f0c108
   - name: multiviewer-extras
     buildsystem: simple
     build-commands:

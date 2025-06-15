@@ -6,7 +6,7 @@ set -euo pipefail
 
 FLAGS=()
 
-declare -i MULTIVIEWER_USE_WAYLAND="${MULTIVIEWER_USE_WAYLAND:-0}"
+declare -i MULTIVIEWER_USE_WAYLAND="${MULTIVIEWER_USE_WAYLAND:-1}"
 
 if [[ "${MULTIVIEWER_USE_WAYLAND}" -eq 1 && "${XDG_SESSION_TYPE}" == "wayland" ]]; then
     echo "MULTIVIEWER_USE_WAYLAND set, adding --ozone-platform=wayland to launch options"
