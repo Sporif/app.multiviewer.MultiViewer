@@ -17,4 +17,4 @@ if [[ "${MULTIVIEWER_USE_WAYLAND}" -eq 1 && "${XDG_SESSION_TYPE}" == "wayland" ]
 fi
 
 export TMPDIR="${XDG_RUNTIME_DIR}/app/${FLATPAK_ID}"
-exec zypak-wrapper "/app/multiviewer/MultiViewer for F1" "${FLAGS[@]}" "$@"
+exec zypak-wrapper "/app/multiviewer/multiviewer" "${FLAGS[@]}" "$@"
