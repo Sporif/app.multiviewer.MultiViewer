@@ -1,9 +1,12 @@
 id: app.multiviewer.MultiViewer
-base: org.electronjs.Electron2.BaseApp
-base-version: '24.08'
+
 runtime: org.freedesktop.Platform
-runtime-version: '24.08'
+runtime-version: &runtime-version '25.08'
 sdk: org.freedesktop.Sdk
+
+base: org.electronjs.Electron2.BaseApp
+base-version: *runtime-version
+
 command: multiviewer
 separate-locales: false
 tags:
@@ -30,8 +33,8 @@ modules:
         chmod 755 "/app/multiviewer/multiviewer"
     sources:
       - type: archive
-        url: https://releases.multiviewer.app/download/287987986/MultiViewer-linux-x64-2.0.2.zip
-        sha256: 19e6a24d68f566d3742a9f0af6987d457070e47039d1de0d3776b9b2c82fef8b
+        url: https://releases.multiviewer.app/download/305607200/MultiViewer-linux-x64-2.3.0.zip
+        sha256: 4cae53815225d4cc938299e05c6ead5daac42703162a30931898e1ac1fc5b4cc
   - name: multiviewer-extras
     buildsystem: simple
     build-commands:
