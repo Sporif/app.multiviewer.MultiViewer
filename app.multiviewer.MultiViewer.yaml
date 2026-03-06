@@ -33,8 +33,8 @@ modules:
         chmod 755 "/app/multiviewer/multiviewer"
     sources:
       - type: archive
-        url: https://releases.multiviewer.app/download/354596710/MultiViewer-linux-x64-2.5.1.zip
-        sha256: 60a98bc9adbe5fe522ae1f517a297e1223bb909faf4eddaa2e536361846d341a
+        url: https://releases.multiviewer.app/download/367699527/MultiViewer-linux-x64-2.6.0.zip
+        sha256: c2fcd4e3420d01b0fe0107c1cd2e14a7d9e714638adbf5be42162a215d582e32
   - name: multiviewer-extras
     buildsystem: simple
     build-commands:
